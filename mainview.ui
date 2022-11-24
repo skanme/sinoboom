@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainView</class>
+ <widget class="QWidget" name="mainView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainView{
+background-color: rgb(24, 26, 28);
+}
+
+#lineEdit{
+color: rgb(255, 255, 255);
+background-color: #141517;
+border-radius:35px;
+border:1px solid #999999;
+font: 16pt &quot;微软雅黑&quot;;
+}
+#widget_Vedio{
+/*border:6px solid #1C8FBF;
+border:6px solid #650a0c;*/
+background-color:#181A1C;
+/*border-radius:10px;*/
+}
+#widget_Rect{
+border-image: url(:/icon/mainView/biankuang.png);
+}
+
+#label_Normal{
+border-image: url(:/icon/mainView/zhengchang2.png);
+}
+#label_Abnormal{
+border-image: url(:/icon/mainView/yichang2.png);
+}
+#textEdit_feedback{
+background-color:#000000;
+color: rgb(255, 255, 255);
+font: 14pt &quot;微软雅黑&quot;;
+}
+#widget_OpenCamera,#widget_StopCheck,#widget_CloseCamera,#widget_CarmeraCheck,#widget_CameraSetting,#widget_SerialPortSetting,#widget_WashCheck{
+border-image: url(:/icon/mainViewBlue/anniu_nor.png);
+}
+
+
+#btn_CarmeraCheck,#btn_CameraSetting,#btn_CloseCamera,#btnStopCheck,#btnOpenCamera,#btn_SerialPortSetting,#stackedWidget,
+#btn_CloseTaskCheck,#btn_ShutCamera,#btn_SpreadCamera,#btn_StartTaskCheck,#btnWashingCheck{
+background-color: rgba(0,0,0,0%);
+border:none;
+}
+#widget_StopCheck:hover,#widget_OpenCamera:hover,#widget_CloseCamera:hover,#widget_CarmeraCheck:hover,#widget_SerialPortSetting:hover,#widget_CameraSetting:hover,#widget_WashCheck:hover{
+border-image: url(:/icon/mainViewBlue/anniu_press.png);
+}
+#widget_CloseTaskCheck,#widget_ShutCamera,#widget_StartTaskCheck,#widget_SpreadCamera{
+border-image: url(:/icon/mainView/anniu_nor.png);
+}
+
+#widget_CloseTaskCheck:hover,#widget_ShutCamera:hover,#widget_StartTaskCheck:hover,#widget_SpreadCamera:hover{
+border-image: url(:/icon/mainView/anniu_press.png);
+}
+#label{
+color: rgb(255, 255, 255);
+font: 14pt &quot;微软雅黑&quot;;
+}
+#btn_PauseVedio{
+background-color: rgba(0,0,0,0%);
+border:none;
+}
+#widget_autoClearError{
+border-image: url(:/icon/mainView/zidongqingchu.png);
+}
+#widget_manualClearError{
+border-image: url(:/icon/mainView/shoudongqingchu.png);
+}
+#btn_manualClearError,#btn_autoClearError{
+background-color: rgba(0,0,0,0%);
+border:none;
+border-radius:45px
+}
+#label_3,#label_4,#label_5,#label_6,#label_7,#label_8,#label_9,#label_10,#label_11,#label_12,#label_13{
+color: rgb(255, 255, 255);
+font: 12pt &quot;微软雅黑&quot;;
+}
+#btnWashCheck{
+background-color:#0d6c94;
+border-radius:20px;
+border:3px solid #00d2ff;
+font: 12pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget_Vedio" native="true">
+   <property name="geometry">
+    <rect>
+     <x>79</x>
+     <y>80</y>
+     <width>1120</width>
+     <height>620</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="btn_PauseVedio">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>277</y>
+      <width>66</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/icon/mainView/bofang.png</normaloff>:/icon/mainView/bofang.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>66</width>
+      <height>66</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="MyLabel" name="label_play">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>0</y>
+      <width>1120</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1120</width>
+      <height>620</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*QLabel{border-width:2px;border-style: solid;border-radius:10px;border-color:rgb(22, 135, 198)}*/
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_play_1">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>0</y>
+      <width>1120</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{border-width:2px;border-style: solid;border-radius:10px;border-color:#670c0d}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_Rect" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1229</x>
+     <y>74</y>
+     <width>625</width>
+     <height>647</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_Normal">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>21</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Abnormal">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>165</y>
+      <width>88</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_feedback">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>48</y>
+      <width>400</width>
+      <height>536</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'微软雅黑'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>209</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>坐标信息</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>730</y>
+     <width>1920</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_7">
+    <widget class="QWidget" name="widget_OpenCamera" native="true">
+     <property name="geometry">
+      <rect>
+       <x>184</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btnOpenCamera">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/shexiangtou_ic.png</normaloff>:/icon/mainViewBlue/shexiangtou_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_CarmeraCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_CarmeraCheck">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/jiance_ic.png</normaloff>:/icon/mainViewBlue/jiance_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_StopCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btnStopCheck">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/tingzhi_ic.png</normaloff>:/icon/mainViewBlue/tingzhi_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_CloseCamera" native="true">
+     <property name="geometry">
+      <rect>
+       <x>942</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_CloseCamera">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/guanbi_ic.png</normaloff>:/icon/mainViewBlue/guanbi_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_SerialPortSetting" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1202</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_SerialPortSetting">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/chuankou_ic.png</normaloff>:/icon/mainViewBlue/chuankou_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_CameraSetting" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1462</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_CameraSetting">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainViewBlue/xiangji_ic.png</normaloff>:/icon/mainViewBlue/xiangji_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>150</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开摄像头</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>457</x>
+       <y>150</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>摄像头检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>717</x>
+       <y>150</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>停止检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>965</x>
+       <y>150</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭摄像头</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>1235</x>
+       <y>150</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口设置</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>1500</x>
+       <y>150</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>相机设置</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_WashCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1710</x>
+       <y>0</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btnWashingCheck">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>18</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/clear.png</normaloff>:/icon/clear.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>1740</x>
+       <y>150</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清洗检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_statu">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>210</y>
+       <width>1861</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_8">
+    <widget class="QWidget" name="widget_SpreadCamera" native="true">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_SpreadCamera">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainView/dakai_ic.png</normaloff>:/icon/mainView/dakai_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_CloseTaskCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>10</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_CloseTaskCheck">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainView/guanbijiance_ic.png</normaloff>:/icon/mainView/guanbijiance_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_StartTaskCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>10</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_StartTaskCheck">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainView/qidong_ic.png</normaloff>:/icon/mainView/qidong_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_ShutCamera" native="true">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_ShutCamera">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>130</width>
+        <height>105</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/mainView/guanbi_ic.png</normaloff>:/icon/mainView/guanbi_ic.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_manualClearError" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1230</x>
+       <y>20</y>
+       <width>321</width>
+       <height>125</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_manualClearError">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>290</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_autoClearError" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1551</x>
+       <y>20</y>
+       <width>321</width>
+       <height>125</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btn_autoClearError">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>290</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>160</y>
+       <width>131</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭摄像头</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开摄像头</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>160</y>
+       <width>145</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启动作业检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>160</y>
+       <width>145</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭作业检测</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_CloseTaskCheck_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>10</y>
+       <width>171</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image:url(:/icon/mainView/anniu_nor.png) 1 1 1 1
+}
+QPushButton:hover{border-image:url(:/icon/mainView/anniu_press2.png) 1 1 1 1
+}
+
+</string>
+     </property>
+     <widget class="QPushButton" name="btn_CloseTaskCheck_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>171</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/icon/back.png</normaloff>:/icon/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>1030</x>
+       <y>160</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="PlaceholderText">
+         <brush brushstyle="NoBrush">
+          <color alpha="128">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="PlaceholderText">
+         <brush brushstyle="NoBrush">
+          <color alpha="128">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="PlaceholderText">
+         <brush brushstyle="NoBrush">
+          <color alpha="128">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>返    回</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">mylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>beijing.png</file>
+        <file>biangkuang.png</file>
+        <file>biangkuang2.png</file>
+        <file>bofang_ic.png</file>
+        <file>bofang_ic2.png</file>
+        <file>chuankoukuang.png</file>
+        <file>chuankoukuang@2x.png</file>
+        <file>dakaiguanbi.png</file>
+        <file>dakaiguanbi@2x.png</file>
+        <file>dakaiguanbi2x_1.png</file>
+        <file>dingshifasong.png</file>
+        <file>dingshifasong@2x.png</file>
+        <file>dingshifasong2x_1.png</file>
+        <file>fasong.png</file>
+        <file>fasong@2x.png</file>
+        <file>icon1.qrc</file>
+        <file>quxiao.png</file>
+        <file>quxiao@2x.png</file>
+        <file>quxiao_ic.png</file>
+        <file>shang.png</file>
+        <file>shang_1.png</file>
+        <file>shezhi.png</file>
+        <file>shezhi@2x.png</file>
+        <file>shurukuang.png</file>
+        <file>shurukuang@2x.png</file>
+        <file>tiaoxiaojiaoju.png</file>
+        <file>tiaoxiaojiaoju_1.png</file>
+        <file>tingzhi.png</file>
+        <file>tingzhi@2x.png</file>
+        <file>tingzhi_1.png</file>
+        <file>tingzhi2_1.png</file>
+        <file>xia.png</file>
+        <file>xia_1.png</file>
+        <file>you.png</file>
+        <file>you_1.png</file>
+        <file>zengdajiaoju.png</file>
+        <file>zengdajiaoju_1.png</file>
+        <file>zhankai.png</file>
+        <file>zhankai@2x.png</file>
+        <file>zuo.png</file>
+        <file>zuo_1.png</file>
+        <file>fasong2x_1.png</file>
+    </qresource>
+</RCC>

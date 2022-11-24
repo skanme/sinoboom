@@ -1,0 +1,2 @@
+1.需要将pro文件中的opencv路径改称自己的opencvword路径
+2.将mainview的深度学习模型改称自己的胜读学习模型路径

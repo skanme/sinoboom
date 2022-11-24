@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWidget</class>
+ <widget class="QWidget" name="LoginWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LoginWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget{
+border-image: url(:/icon/beijingRect2.png);
+padding-top:15px;
+padding-bottom:15px;
+padding-left:15px;
+padding-right:15px;
+}
+#label, #label_4{
+font: 17pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+#btnConfirmUpdate{
+border-radius:42px;
+border-image: url(:/icon/registerIcon/queren.png);
+}
+#widget_Id, #widget_newPassword, #widget_userId, #widget_userPassword{
+background-color: rgba(28,30,33,32%);
+border:none; 
+border-radius:34px;
+border:1px solid #afafaf;
+}
+#label_line,#label_line_2{
+background-color: rgb(255, 255, 255);
+}
+#label_2,#label_3{
+color: rgb(255, 255, 255);
+font: 15pt &quot;微软雅黑&quot;;
+}
+#widget_2{
+border-image: url(:/icon/beijingRect.png);
+padding-top:15px;
+padding-bottom:15px;
+padding-left:15px;
+padding-right:15px;
+}
+#btn_Login{
+border-radius:42px;
+border-image: url(:/icon/denglv.png)	
+}
+#btn_forgetPwd{
+background-color: rgb(255, 255, 255,0%);
+border:none;
+font: 11pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+#label_5, #label_6{
+color: rgb(255, 255, 255);
+font: 15pt &quot;微软雅黑&quot;;
+}
+#lineEdit_inputId, #lineEdit_inputPwd,#lineEdit_NewPwd, #lineEdit_id{
+background-color: rgba(28,30,33,0%);
+border:none; 
+font: 15pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+}
+#label_title1{
+font: 18pt &quot;Franklin Gothic Medium&quot;;
+color:#4ea7fa;
+}
+#label_7{
+border-image: url(:/icon/tishi1.png);
+border-radius:34px;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>170</y>
+         <width>666</width>
+         <height>638</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>95</x>
+          <y>106</y>
+          <width>142</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>用户登录</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_userId" native="true">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>215</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_inputId">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>10</y>
+           <width>350</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>12345678</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_userPassword" native="true">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>301</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_inputPwd">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>10</y>
+           <width>350</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>11111111</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="btn_Login">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>451</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_forgetPwd">
+        <property name="geometry">
+         <rect>
+          <x>469</x>
+          <y>542</y>
+          <width>94</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>忘记密码</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>122</x>
+          <y>235</y>
+          <width>69</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>账号：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>122</x>
+          <y>321</y>
+          <width>69</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>密码：</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_title1">
+       <property name="geometry">
+        <rect>
+         <x>808</x>
+         <y>154</y>
+         <width>298</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Medium</family>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>SINOBOOM</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>70</y>
+         <width>568</width>
+         <height>68</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>197</y>
+         <width>666</width>
+         <height>758</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>92</x>
+          <y>106</y>
+          <width>141</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>忘记密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnConfirmUpdate">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>601</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_Id" native="true">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>301</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_id">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>10</y>
+           <width>330</width>
+           <height>50</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_line">
+        <property name="geometry">
+         <rect>
+          <x>218</x>
+          <y>317</y>
+          <width>1</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_newPassword" native="true">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>388</y>
+          <width>500</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_NewPwd">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>10</y>
+           <width>330</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string>   8位数字或字母</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_line_2">
+        <property name="geometry">
+         <rect>
+          <x>218</x>
+          <y>404</y>
+          <width>1</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>111</x>
+          <y>320</y>
+          <width>88</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>账号</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>112</x>
+          <y>407</y>
+          <width>88</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>新密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

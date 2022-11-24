@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraDialog</class>
+ <widget class="QDialog" name="CameraDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1039</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget{
+background-color:#181A1C;
+border:6px solid #000000;
+}
+#btn_close{
+	border-image: url(:/icon/Dialog1/quxiao_ic.png);
+}
+#btn_Up{
+border-image: url(:/icon/Dialog1/shang.png);
+}
+#btn_Up:hover{border-image: url(:/new/prefix1/shang_1.png);}
+
+#btn_Down{
+border-image: url(:/icon/Dialog1/xia.png);
+}
+#btn_Down:hover{border-image: url(:/new/prefix1/xia_1.png);}
+
+#btn_Left{
+border-image: url(:/icon/Dialog1/you.png);
+}
+#btn_Left:hover{border-image: url(:/new/prefix1/you_1.png);}
+
+#btn_Right{
+border-image: url(:/icon/Dialog1/zuo.png);
+}
+#btn_Right:hover{border-image: url(:/new/prefix1/zuo_1.png);}
+#label{
+color: rgb(255, 255, 255);
+font: 11pt &quot;微软雅黑&quot;;
+
+}
+#btn_addFocal,#btn_decreaseFocal{
+background-color: rgba(255, 255, 255,0%);
+border:none;
+border-radius:40px;
+}
+#widget_2{
+border-image: url(:/icon/Dialog1/zengdajiaoju.png);
+}
+#widget_2:hover{border-image: url(:/new/prefix1/zengdajiaoju_1.png);}
+
+#widget_3{
+border-image: url(:/icon/Dialog1/tiaoxiaojiaoju.png);
+}
+#widget_3:hover{border-image: url(:/new/prefix1/tiaoxiaojiaoju_1.png);}
+
+#btn_Pause{
+border-image: url(:/icon/Dialog1/bofang_ic2.png);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>60</y>
+     <width>809</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="btn_Pause">
+    <property name="geometry">
+     <rect>
+      <x>388</x>
+      <y>193</y>
+      <width>66</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_viwe">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>809</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_viwe</zorder>
+   <zorder>btn_Pause</zorder>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>928</x>
+     <y>32</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>559</y>
+     <width>95</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>云台控制</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Up">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>608</y>
+     <width>76</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Down">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>693</y>
+     <width>76</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Right">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>693</y>
+     <width>76</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Left">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>693</y>
+     <width>76</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>564</y>
+     <width>281</width>
+     <height>125</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="btn_addFocal">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>19</y>
+      <width>261</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>670</y>
+     <width>281</width>
+     <height>125</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="btn_decreaseFocal">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>261</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
